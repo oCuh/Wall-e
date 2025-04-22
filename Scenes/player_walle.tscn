@@ -1,7 +1,20 @@
-[gd_scene format=3 uid="uid://bhss16lwmw2bn"]
+[gd_scene load_steps=4 format=3 uid="uid://bhss16lwmw2bn"]
+
+[ext_resource type="Script" uid="uid://17b4grbgx07v" path="res://Scripts/player_walle.gd" id="1_an6x7"]
+[ext_resource type="Texture2D" uid="uid://b8lsf64082rvo" path="res://Assets/Sprites/placeholder.png" id="2_tbakk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c2mo3"]
+size = Vector2(85, 88)
 
 [node name="PlayerWalle" type="CharacterBody2D"]
+collision_mask = 2
+script = ExtResource("1_an6x7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+scale = Vector2(0.28, 0.2975)
+texture = ExtResource("2_tbakk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_c2mo3")
