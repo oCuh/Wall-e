@@ -7,6 +7,8 @@ class_name player_walle
 @export var jump_velocity = -350
 @export_group("")
 
+@onready var animated_sprite_2d = $AnimatedSprite2D
+
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _physics_process(delta):
@@ -27,3 +29,9 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		
 	move_and_slide()
+	
+	if Input.is_action_just_pressed("shoot"):
+		shoot()
+
+func shoot():
+	animated_sprite_2d.play("shooting")
