@@ -43,7 +43,6 @@ stream = ExtResource("4_n45e2")
 autoplay = true
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 2.0
 
 [node name="startOST" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_opfnp")
