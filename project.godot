@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Wall-e"
-run/main_scene="uid://xubaft35y0m2"
+run/main_scene="uid://eg1d1u3pxxtx"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
