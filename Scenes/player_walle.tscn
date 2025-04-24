@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bhss16lwmw2bn"]
+[gd_scene load_steps=7 format=3 uid="uid://bhss16lwmw2bn"]
 
 [ext_resource type="Script" uid="uid://17b4grbgx07v" path="res://Scripts/player_walle.gd" id="1_an6x7"]
-[ext_resource type="Texture2D" uid="uid://b8lsf64082rvo" path="res://Assets/Sprites/placeholder.png" id="2_tbakk"]
-[ext_resource type="Texture2D" uid="uid://dp0kjeclueiub" path="res://Assets/Sprites/placeholderShoot.png" id="3_c2mo3"]
+[ext_resource type="Texture2D" uid="uid://dbxotae0d5hrb" path="res://Assets/Sprites/placeholder.png" id="2_tbakk"]
+[ext_resource type="Texture2D" uid="uid://e810h85ad6u6" path="res://Assets/Sprites/placeholderShoot.png" id="3_c2mo3"]
+[ext_resource type="Script" uid="uid://v546w2y0nfc6" path="res://Scripts/walle_animation.gd" id="4_oekwo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c2mo3"]
 size = Vector2(85, 88)
@@ -21,9 +22,9 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("3_c2mo3")
 }],
-"loop": true,
+"loop": false,
 "name": &"shooting",
-"speed": 5.0
+"speed": 10.0
 }]
 
 [node name="PlayerWalle" type="CharacterBody2D"]
@@ -39,4 +40,6 @@ position = Vector2(-1.5, -0.499997)
 scale = Vector2(0.2775, 0.2875)
 sprite_frames = SubResource("SpriteFrames_oekwo")
 animation = &"shooting"
-autoplay = "normal"
+script = ExtResource("4_oekwo")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="AnimatedSprite2D" method="_on_animation_finished"]
