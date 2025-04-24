@@ -32,6 +32,11 @@ func _physics_process(delta):
 	
 	if Input.is_action_just_pressed("shoot"):
 		shoot()
+	else:
+		animated_sprite_2d.play("normal")
+
 
 func shoot():
 	animated_sprite_2d.play("shooting")
+	set_physics_process(false)
+	

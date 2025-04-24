@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbxotae0d5hrb"
-path="res://.godot/imported/placeholder.png-ae741ea0eea316a680a5788aa5634eea.ctex"
+uid="uid://bsgbh83nlugf7"
+path="res://.godot/imported/walleJump.png-d0472e70e855c815cbaefb7a66442d76.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/placeholder.png"
-dest_files=["res://.godot/imported/placeholder.png-ae741ea0eea316a680a5788aa5634eea.ctex"]
+source_file="res://Assets/Sprites/walleJump.png"
+dest_files=["res://.godot/imported/walleJump.png-d0472e70e855c815cbaefb7a66442d76.ctex"]
 
 [params]
 
