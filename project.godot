@@ -17,8 +17,7 @@ config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=1920
-window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
 
 [input]
 
@@ -56,4 +55,4 @@ shoot={
 
 [rendering]
 
-environment/defaults/default_clear_color=Color(0.33689, 0.502962, 0.351171, 1)
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)

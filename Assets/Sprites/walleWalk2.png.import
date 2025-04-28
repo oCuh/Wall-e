@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbxotae0d5hrb"
-path="res://.godot/imported/placeholder.png-ae741ea0eea316a680a5788aa5634eea.ctex"
+uid="uid://4c32iuxsbnv"
+path="res://.godot/imported/walleWalk2.png-46ca8fea9ead4659230e5f36da9b5ce2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/placeholder.png"
-dest_files=["res://.godot/imported/placeholder.png-ae741ea0eea316a680a5788aa5634eea.ctex"]
+source_file="res://Assets/Sprites/walleWalk2.png"
+dest_files=["res://.godot/imported/walleWalk2.png-46ca8fea9ead4659230e5f36da9b5ce2.ctex"]
 
 [params]
 
